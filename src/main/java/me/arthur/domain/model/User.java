@@ -15,7 +15,7 @@ public class User {
     private Card card;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Feature> features;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<News> newsList;
 
     public Long getId() {
